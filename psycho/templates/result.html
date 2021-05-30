@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+	<title>Тестирование МИЭТ</title>
+
+</head>
+<body>
+	<div class="hat">
+		<div class="container">
+			<div class="hat_wrapper">
+				<h1 class="hat_highlight">Результаты</h1>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			
+			{{ q_block | safe }}
+
+			<div class="submit">
+					<button class="submit-results">Отправить результаты</button>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer">
+	</div>
+</body>
+</html>
